@@ -24,7 +24,7 @@
     <import resource="classpath:META-INF/cxf/cxf*.xml" />
     <bean id="biosocket" class="org.eclipse.jetty.server.bio.SocketConnector">
         <property name="host" value="localhost" />
-        <property name="port" value="8080" />
+        <property name="port" value="9001" />
     </bean>
     <bean id="defaultHandler" class="org.eclipse.jetty.server.handler.DefaultHandler" />
     <!-- Cxf Bus implementation -->
@@ -38,7 +38,7 @@
     <!-- Jetty server configuration and implementation -->
     <httpj:engine-factory bus="cxf">
         <!-- jetty server port we can add host too -->
-        <httpj:engine host="localhost" port="8080">
+        <httpj:engine host="localhost" port="9001">
             <!-- jetty thread pooling -->
             <httpj:threadingParameters minThreads="5" maxThreads="15" />
             <httpj:connector>
