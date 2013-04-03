@@ -30,9 +30,9 @@
     <wsdl:message name="GreetingsReq">
         <wsdl:part element="tns:GreetingsRequest" name="parameterIn" />
     </wsdl:message>
-    <wsdl:message name="GreetingsRes">
+    <!--wsdl:message name="GreetingsRes">
         <wsdl:part element="tns:GreetingsResponse" name="parameterOut" />
-    </wsdl:message>
+    </wsdl:message-->
     <wsdl:portType name="Greetings">
         <wsdl:operation name="Greetings">
             <wsdl:input message="tns:GreetingsReq" />
@@ -46,9 +46,9 @@
             <wsdl:input>
                 <soap:body use="literal" />
             </wsdl:input>
-            <wsdl:output>
+            <!--wsdl:output>
                 <soap:body use="literal" />
-            </wsdl:output>
+            </wsdl:output-->
         </wsdl:operation>
     </wsdl:binding>
     <wsdl:service name="GreetingsService">
