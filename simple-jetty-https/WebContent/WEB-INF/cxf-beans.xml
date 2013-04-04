@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd 
+       http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+    <jaxws:endpoint xmlns:tns="http://poc.kaustuv.com/ws/service/greetings" 
+        id="greetings"
+        implementor="com.kaustuv.poc.ws.service.greetings.GreetingsImpl" 
+        wsdlLocation="WEB-INF/wsdl/Sample.wsdl" 
+        endpointName="tns:GreetingsPort"
+        serviceName="tns:GreetingsService" 
+        address="https://localhost:666/Greetings">
+		<!-- to use the catalina default 8443 port user address="/Greetings" -->
+        <jaxws:properties>
+            <entry key="mtom-enabled" value="true" />
+        </jaxws:properties>
+    </jaxws:endpoint>
+</beans>
