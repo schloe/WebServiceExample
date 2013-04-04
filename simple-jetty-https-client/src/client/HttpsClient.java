@@ -1,18 +1,3 @@
-/*---------------------------------------------------------------------------*\
-|
-| Copyright (c) Orga Systems GmbH and/or its affiliates, 2013
-| 
-| All Rights Reserved.
-|
-| The software contained on this media is proprietary to and
-| embodies the confidential technology of the copyright holder.
-| Possession, use, duplication or dissemination of the software
-| and media is authorized only pursuant to a valid written license
-| from the copyright holder.
-|
-| This copyright notice must appear in all copies of this software.
-|
-\*---------------------------------------------------------------------------*/
 package client;
 
 import java.net.URL;
